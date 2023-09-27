@@ -1,0 +1,11 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+
+public class CreateStatement {
+	
+	public static void createTable() { 
+		Connection cnn = JDBCConnection.getJDBCConnection();
+	}
+
+}

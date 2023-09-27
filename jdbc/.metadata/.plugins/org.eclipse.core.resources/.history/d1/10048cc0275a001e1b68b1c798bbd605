@@ -1,0 +1,16 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class UpdatePreparedStatement {
+	
+	public static void insertRecords(int id, String name) {
+		Connection cnn = JDBCConnection.getJDBCConnection();
+		
+		String sql = "insert into person(id, name) values(?,?)";
+		
+		PreparedStatement ppstm = cnn.prepareStatement(sql);
+	}
+
+}

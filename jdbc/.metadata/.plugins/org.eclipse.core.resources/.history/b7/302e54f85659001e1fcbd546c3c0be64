@@ -1,0 +1,8 @@
+package com.hocjdbc.connection;
+
+public class JDBCStatement {
+	public static void main(String[] args) {
+		
+	}
+
+}

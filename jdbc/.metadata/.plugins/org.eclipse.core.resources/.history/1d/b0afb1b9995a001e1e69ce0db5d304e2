@@ -1,0 +1,13 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+
+public class DataBaseMeta {
+	public static void main(String[] args) {
+		Connection cnn = JDBCConnection.getJDBCConnection();
+		
+		DatabaseMetaData dmd = cnn.getMetaData();
+
+	}
+}

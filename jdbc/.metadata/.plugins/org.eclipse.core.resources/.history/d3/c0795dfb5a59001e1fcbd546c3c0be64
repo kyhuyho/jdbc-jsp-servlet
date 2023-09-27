@@ -1,0 +1,12 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+public class SelectStatement {
+	public static void main(String[] args) {
+		Connection cnn = JDBCConnection.getJDBCConnection();
+		Statement stm = cnn.createStatement();
+	}
+
+}

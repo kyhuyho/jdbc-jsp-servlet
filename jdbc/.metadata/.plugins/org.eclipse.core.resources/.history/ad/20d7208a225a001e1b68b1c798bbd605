@@ -1,0 +1,10 @@
+package com.hocjdbc.connection;
+
+public class InsertStatement {
+	public static void insertRecords(int id, String name) {
+		
+	}
+    public static void updateRecords(int id, String name) {
+    	
+    }
+}

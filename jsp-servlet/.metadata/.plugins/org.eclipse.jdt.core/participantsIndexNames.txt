@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+E:\jdbc-jsp-servlet\jsp-servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1372209006.index
+\helloworldnew\src\main\java
+E:\jdbc-jsp-servlet\jsp-servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2019363117.index
+\helloworldnew\src\main\java

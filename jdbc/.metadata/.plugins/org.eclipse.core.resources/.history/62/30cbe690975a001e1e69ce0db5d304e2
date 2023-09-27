@@ -1,0 +1,14 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+
+public class BatchJDBC {
+	public static void main(String[] args) {
+		Connection cnn = JDBCConnection.getJDBCConnection();
+		
+		String sql1 = "insert into person(id, name) values(3, 'A')";
+		String sql2 = "insert into person(id, name) values(4, 'A')";
+		String sql3 = "insert into person(id, name) values(5, 'A')";
+	}
+
+}

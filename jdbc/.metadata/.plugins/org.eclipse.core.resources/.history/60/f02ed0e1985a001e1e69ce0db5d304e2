@@ -1,0 +1,8 @@
+package com.hocjdbc.connection;
+
+public class MetaData {
+	public static void main(String[] args) {
+		
+	}
+
+}

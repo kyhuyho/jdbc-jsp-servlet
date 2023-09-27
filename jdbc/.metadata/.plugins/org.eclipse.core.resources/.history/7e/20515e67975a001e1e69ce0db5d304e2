@@ -1,0 +1,8 @@
+package com.hocjdbc.connection;
+
+public class BatchJDBC {
+	public static void main(String[] args) {
+		
+	}
+
+}

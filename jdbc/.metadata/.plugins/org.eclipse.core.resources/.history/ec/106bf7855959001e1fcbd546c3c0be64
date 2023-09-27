@@ -1,0 +1,10 @@
+package com.hocjdbc.connection;
+
+import java.sql.Statement;
+
+public class JDBCStatement {
+	public static void main(String[] args) {
+		Statement stm = JDBCConnection.getJDBCConnection().createStatement();
+	}
+
+}

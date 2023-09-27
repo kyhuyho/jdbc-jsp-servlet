@@ -1,0 +1,28 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class UpdatePreparedStatement {
+	
+	public static void insertRecords(int id, String name) {
+		Connection cnn = JDBCConnection.getJDBCConnection();
+		
+		String sql = "insert into person(id, name) values(?,?)";
+		
+		try {
+			PreparedStatement ppstm = cnn.prepareStatement(sql);
+			
+			ppstm.setInt(1, id);
+			ppstm.setString(2, name);
+			
+			int rs = ppstm.executeUpdate();
+			System.out.println(rs);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

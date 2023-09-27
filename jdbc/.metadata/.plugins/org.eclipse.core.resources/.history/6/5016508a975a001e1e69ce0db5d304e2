@@ -1,0 +1,10 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+
+public class BatchJDBC {
+	public static void main(String[] args) {
+		Connection cnn = JDBCConnection.getJDBCConnection();
+	}
+
+}

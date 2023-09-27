@@ -1,0 +1,17 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+
+public class JDBCConnection {
+	
+	public static Connection getJDBCConnection() {
+		// tải mysql driver vào
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

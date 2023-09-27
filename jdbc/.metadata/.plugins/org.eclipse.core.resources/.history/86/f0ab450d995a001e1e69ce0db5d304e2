@@ -1,0 +1,24 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class MetaData {
+	public static void main(String[] args) {
+		Connection cnn = JDBCConnection.getJDBCConnection();
+		
+		try {
+			Statement stm = cnn.createStatement();
+			
+			String sql = "select * from person";
+			
+			ResultSet rs = stm.executeQuery(sql);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+
+public class SelectPrepareStatment {
+	public static void main(String[] args) {
+		Connection cnn = JDBCConnection.getJDBCConnection();
+		
+		String sql = "select * from person";
+	}
+
+}

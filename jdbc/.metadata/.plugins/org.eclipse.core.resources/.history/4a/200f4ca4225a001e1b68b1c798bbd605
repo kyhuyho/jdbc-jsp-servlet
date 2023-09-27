@@ -1,0 +1,19 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+public class InsertStatement {
+	public static void insertRecords(int id, String name) {
+		Connection cnn = JDBCConnection.getJDBCConnection();
+		
+		Statement stm = cnn.createStatement();
+		
+	}
+    public static void updateRecords(int id, String name) {
+    	
+    }
+    public static void deleteRecords(int id) {
+    	
+    }
+}

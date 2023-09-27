@@ -1,0 +1,18 @@
+package com.hocjdbc.connection;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JDBCStatement {
+	public static void main(String[] args) {
+		try {
+			Connection cnn = JDBCConnection.getJDBCConnection();
+			Statement stm = JDBCConnection.getJDBCConnection().createStatement();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
